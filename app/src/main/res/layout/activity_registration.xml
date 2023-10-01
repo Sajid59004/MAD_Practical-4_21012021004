@@ -1,195 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".registration_activity"
-    tools:ignore="ExtraText">
-
-    <ImageView
-        android:id="@+id/Guni_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/guni_pink_logo" />
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="User Full Name : ">
-                </TextView>
-
-                <EditText
-                    android:layout_weight="0.5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="text">
-                </EditText>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="Phone Number : "
-                    >
-                </TextView>
-
-                <EditText
-                    android:layout_weight="0.5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="phone">
-                </EditText>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="City : ">
-                </TextView>
-
-                <EditText
-                    android:layout_weight="0.5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="text">
-                </EditText>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="Email : ">
-                </TextView>
-
-                <EditText
-                    android:layout_weight="0.5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress">
-                </EditText>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="Password :">
-                </TextView>
-
-                <EditText
-                    android:layout_weight="0.5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPassword">
-                </EditText>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="13sp"
-                    android:text="Confirm Password :">
-                </TextView>
-
-                <EditText
-                    android:layout_weight="0.5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPassword">
-                </EditText>
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="-20dp"
-        android:elevation="20dp">
-        <Button
-            android:id="@+id/register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Register">
-        </Button>
-
-    </LinearLayout>\
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="50dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Do you have an account?">
-        </TextView>
-
-        <Button
-            android:id="@+id/Login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:layout_marginStart="50dp"
-            android:text="Login"
-            android:textStyle="bold"
-            android:textColor="@android:color/holo_purple">
-        </Button>
-    </LinearLayout>
-
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="vertical"
+ tools:context=".RegistrationActivity"
+ tools:ignore="ExtraText">
+ <ImageView
+ android:id="@+id/Guni_image"
+ android:layout_width="match_parent"
+ android:layout_height="200dp"
+ app:srcCompat="@drawable/guni_pink_logo" />
+    
+ <com.google.android.material.card.MaterialCardView
+ android:id="@+id/materialCardView"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_marginHorizontal="20dp"
+ app:cardCornerRadius="20dp"
+ app:cardElevation="20dp">
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="vertical"
+ android:padding="20dp">
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal">
+ <TextView
+ android:layout_weight="0.3"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:textSize="13sp"
+ android:text="User Full Name : ">
+ </TextView>
+ <EditText
+ android:layout_weight="0.5"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:inputType="text">
+ </EditText>
+ </LinearLayout>
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal">
+ <TextView
+ android:layout_weight="0.3"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:textSize="13sp"
+ android:text="Phone Number : "
+ >
+ </TextView>
+ <EditText
+ android:layout_weight="0.5"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:inputType="phone">
+ </EditText>
+ </LinearLayout>
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal">
+ <TextView
+ android:layout_weight="0.3"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:textSize="13sp"
+ android:text="City : ">
+ </TextView>
+ <EditText
+ android:layout_weight="0.5"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:inputType="text">
+ </EditText>
+ </LinearLayout>
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal">
+ <TextView
+ android:layout_weight="0.3"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:textSize="13sp"
+ android:text="Email : ">
+ </TextView>
+ <EditText
+ android:layout_weight="0.5"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:inputType="textEmailAddress">
+ </EditText>
+ </LinearLayout>
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal">
+ <TextView
+ android:layout_weight="0.3"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:textSize="13sp"
+ android:text="Password :">
+ </TextView>
+ <EditText
+ android:layout_weight="0.5"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:inputType="textPassword">
+ </EditText>
+ </LinearLayout>
+ <LinearLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:orientation="horizontal">
+ <TextView
+ android:layout_weight="0.3"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:textSize="13sp"
+ android:text="Confirm Password :">
+ </TextView>
+ <EditText
+ android:layout_weight="0.5"
+ android:layout_width="0dp"
+ android:layout_height="wrap_content"
+ android:inputType="textPassword">
+ </EditText>
+ </LinearLayout>
+ </LinearLayout>
+ </com.google.android.material.card.MaterialCardView>
+ <LinearLayout
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_gravity="center"
+ android:layout_marginTop="-20dp"
+ android:elevation="20dp">
+     
+ <Button
+ android:id="@+id/register"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Register">
+ </Button>
+     
+ </LinearLayout>\
+    
+ <LinearLayout
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:layout_margin="50dp">
+     
+ <TextView
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Do you have an account?">
+ </TextView>
+     
+ <Button
+ android:id="@+id/Login"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:background="#00FFFFFF"
+ android:text="Login"
+ android:layout_marginStart="50dp"
+ android:textStyle="bold"
+ android:textColor="@android:color/holo_purple">
+ </Button>
+ </LinearLayout>
 </LinearLayout>
